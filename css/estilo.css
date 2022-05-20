@@ -1,10 +1,10 @@
 @keyframes color-change {
     0% {
-        background-color: #7547e0;
+        background-color: #004BA8;
     }
     100% {
         border-radius: 10px 10px 0 0;
-        background-color: #fff;
+        background-color: #fbfef9;
     }
 }
 
@@ -23,7 +23,7 @@ a{
 }
 
 header{
-    background-color: #8787ea;
+    background-color: #3E78B2;
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
@@ -40,7 +40,7 @@ header h1{
     margin-top: 40px;
     width: 380px;
     height: 50px;
-    border: 1px solid #1212e8;
+    border: 1px solid #004ba8;
     border-radius: 5px;
 }
 
@@ -56,7 +56,7 @@ header h1{
     border: none;
     width: 13%;
     height: 95%;
-    background-color: #8787ea;
+    background-color: #3e78b2;
 }
 
 #button img{
@@ -67,8 +67,8 @@ nav{
     display: grid;
     grid-template-columns: repeat(10, 1fr);
     height: 40px;
-    background-color: #7547e0;
-    font-size: 12pt;
+    background-color: #004ba8;
+    font-size: 11pt;
     text-align: center;
 }
 
@@ -80,4 +80,219 @@ nav{
     border-radius: 10px 10px 0 0;
     animation: color-change 1s;
     background-color: #fff;
+}
+
+
+section{
+    display: grid;
+    grid-template-columns: repeat(3, 33%);
+    margin-left: 240px;
+    margin-right: 240px;
+    border-bottom: 1px solid #000;
+}
+
+.card{
+    width: 250px;
+    height: 300px;
+    margin: 15px;
+    background-color: #fbfef9;
+}
+
+.card img {
+    height: 50%;
+    width: 50%;
+    object-fit: contain;
+    margin-left: 50px;
+}
+
+.card p{
+    margin-top: 30px;
+    margin-left: 10px;
+    font-size: 8pt;
+}
+
+.card strong{
+    display: block;
+    padding-bottom: 10px;
+    padding-left: 10px;
+}
+
+.card .botao button{
+    border-radius: 220px;
+    width: 25px;
+    height: 25px;
+    padding-bottom: 25px;
+}
+.botao{
+    text-align: center;
+}
+
+#redes{
+	width: 100%;
+	margin: 30px 0;
+    text-align: center;
+}
+
+#redes a{
+	display: inline-block;
+	text-align: center;
+	width: 100px;
+	padding: 5px;
+	box-sizing: border-box;
+	transform: rotate(-30deg) skew(10deg);
+}
+
+.fa-facebook{
+	background-color: #3b5999;
+}
+
+.fa-twitter{
+	background-color: #55acee;
+}
+
+.fa-instagram{
+	background-color: #0077b5;
+}
+
+.fa-linkedin{
+	background-color: #55acee;
+}
+
+#redes span{
+	position: absolute;
+	width: 50px;
+	height: 50px;
+	transition: 0.3s;
+	color: #fff;
+	font-size: 30px;
+	line-height: 30px;
+}
+
+#redes a:hover span:nth-child(5){
+	transform: translate(20px, -20px);
+	opacity: 1;
+}
+#redes a:hover span:nth-child(4){
+	background-color: #000;
+	transform: translate(15px, -15px);
+	opacity: 0.8;
+}
+
+#redes a:hover span:nth-child(3){
+	background-color: #000;
+	transform: translate(10px, -10px);
+	opacity: 0.6;
+}
+
+#redes a:hover span:nth-child(2){
+	background-color: #000;
+	transform: translate(5px, -5px);
+	opacity: 0.4;
+}
+
+#redes a:hover span:nth-child(1){
+	background-color: #000;
+	opacity: 0.2;
+}
+
+.nomes{
+    margin: 0;
+    display: block;
+    text-align: center;
+    margin-left: 70px;
+}
+
+form{
+    margin-top: 10px;
+    text-align: center;
+    border-bottom: 1px solid #000;
+    margin-left: 240px;
+    margin-right: 240px;
+}
+
+form input{
+    margin-top: 15px;
+}
+
+form textarea{
+    display: block;
+    margin-left: 350px;
+    margin-bottom: 15px;
+    margin-top: 10px;
+}
+
+@media screen and (max-width: 768px) {
+    header{
+        grid-template-columns: 1fr;
+    }
+    
+    header h1 span{
+        display: none;
+    }
+
+    header h1{
+        text-align: center;
+    }
+
+    #Bpesquisa{
+        margin: 0;
+        width: 350px;
+        height: 50px;
+        margin-left: 12px;
+        margin-bottom: 8px;
+    }
+
+    nav{
+        display: none;
+    }
+
+    section{
+        margin: 0;
+        margin-left: 45px;
+        margin-right: 45px;
+        grid-template-columns: 33%;
+    }
+
+    form{
+        margin: 0;
+        display: grid;
+        grid-template-columns: 100%;
+    }
+
+
+
+    form textarea{
+        margin-left: 0;
+    }
+
+    #redes{
+        width: 100%;
+        text-align: none;
+        padding-right: 55px;
+    }
+    
+    #redes a{
+        display: inline-block;
+        text-align: center;
+        width: 70px;
+        box-sizing: border-box;
+        transform: rotate(-30deg) skew(10deg);
+    }
+    
+    #redes span{
+        position: absolute;
+        width: 40px;
+        height: 40px;
+        transition: 0.3s;
+        color: #fff;
+        font-size: 30px;
+        line-height: 30px;
+    }
+    
+    .nomes{
+        margin: 0;
+        display: block;
+        text-align: center;
+        font-size: 10pt;
+    }
 }
