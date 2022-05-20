@@ -63,17 +63,26 @@ header h1{
     width: 15px;
 }
 
-nav{
-    display: grid;
-    grid-template-columns: repeat(10, 1fr);
-    height: 40px;
+#navbarToggleExternalContent {
     background-color: #004ba8;
-    font-size: 11pt;
-    text-align: center;
 }
+
+#navbarToggleExternalContent div {
+    background-color: #004ba8;
+}
+
+ nav {
+    /* display: grid; */
+    /* grid-template-columns: repeat(10, 1fr); */
+    /* height: 40px; */
+    background-color: #004ba8;
+    /* font-size: 11pt; */
+    text-align: center;
+} 
 
 .categorias{
     padding-top: 5px;
+     font-size: 16pt;
 }
 
 .categorias:hover{
